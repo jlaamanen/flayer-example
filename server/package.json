@@ -1,0 +1,23 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "NODE_ENV=development nodemon src/app.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "dotenv": "^16.0.1",
+    "flayer": "0.0.0-alpha.10",
+    "memorystore": "^1.6.7"
+  },
+  "devDependencies": {
+    "@types/node": "^17.0.31",
+    "nodemon": "^2.0.19",
+    "ts-node": "^10.7.0",
+    "typescript": "^4.6.4"
+  }
+}
