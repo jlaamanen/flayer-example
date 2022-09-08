@@ -1,10 +1,8 @@
 import { createServer } from "flayer";
-import * as products from "./modules/products";
-import * as user from "./modules/user";
 
 const server = createServer({
-  products,
-  user,
+  products: require("./modules/products"),
+  user: require("./modules/user"),
 });
 
 if (process.env.NODE_ENV === "development") {

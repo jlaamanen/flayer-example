@@ -10,10 +10,10 @@
   async function handleLogin() {
     try {
       await authenticate(username, password);
+      dispatch("login");
     } catch (error) {
-      alert(error);
+      alert(`Login failed:\n\n${error.message}`);
     }
-    dispatch("login");
   }
 </script>
 

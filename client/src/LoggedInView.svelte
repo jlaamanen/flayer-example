@@ -15,8 +15,12 @@
   let productsPromise = getAllProducts();
 
   async function handleLogout() {
-    await logout();
-    dispatch("logout");
+    try {
+      await logout();
+      dispatch("logout");
+    } catch (error) {
+      alert(`Logout failed:\n\n${error.message}`);
+    }
   }
 
   function reloadProducts() {

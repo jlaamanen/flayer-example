@@ -1,5 +1,5 @@
 import { onDisconnect } from "flayer";
-import { assertIsAdmin, assertIsLoggedIn } from "../session";
+import { assertIsAdmin, assertIsLoggedIn } from "../guards";
 import { sleep } from "../util";
 
 // Product change callback listeners

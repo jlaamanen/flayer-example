@@ -1,4 +1,4 @@
-const { executeFlayerFunction } = require("flayer/dist/client-lib");
+import { executeFlayerFunction } from "flayer/dist/client-lib";
 
 export async function getAllProducts(...args) { return executeFlayerFunction("products", "getAllProducts", args); };
 export async function getProduct(...args) { return executeFlayerFunction("products", "getProduct", args); };
